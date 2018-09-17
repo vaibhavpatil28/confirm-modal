@@ -1,0 +1,56 @@
+::ng-deep .confirmation_modal {
+  .mat-dialog-container {
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.confirmation_card {
+  padding: 30px 15px 15px 15px;
+  background-color: transparent;
+
+  .card {
+    border: 1px solid rgba(0, 0, 0, .095);
+    border-radius: .5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .14);
+
+    .card_header {
+      margin: -20px 20px 20px 20px;
+      padding: 15px;
+      border-radius: 6px;
+      position: relative;
+      .card_title{
+        text-align: center;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .icon_close{
+        position: absolute;
+        top: 3px;
+        right: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 2px;
+
+        &:hover{
+          box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+          background-color: rgba(0, 0, 0, .2);
+        }
+      }
+    }
+
+    .card_header_danger {
+      // background: linear-gradient(60deg, #ef5350, #e53935);
+      color: #fff;
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(244, 67, 54, .4);
+    }
+    .card_footer{
+      .button{
+        padding: 0.5rem 1.13rem;
+      }
+    }
+  }
+}
